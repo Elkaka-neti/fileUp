@@ -2,7 +2,7 @@ import * as React from "react";
 import { useRef, useState, useContext } from "react";
 
 import {LayoutTag} from "../database"
-import "./styles/styles.css";
+import "../styles/styles.css";
 export default function Download() {
   const inputsRef = useRef([]);
   const [modo, setModo] = useState(true);

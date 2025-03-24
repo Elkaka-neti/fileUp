@@ -8,9 +8,9 @@ import {
 
 
 import "./styles/styles.css";
-import Download from "./components/download";
-import Upload from "./components/upload";
-import { LayoutTag } from "/database";
+import Download from "./components/download.jsx";
+import Upload from "./components/upload.jsx";
+import { LayoutTag } from "./database.jsx";
 
 export default function Main() {
   const {layout, setLayout} = useContext(LayoutTag);
