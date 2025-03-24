@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./app.jsx";
+import Main from "./main.jsx"
+import {LayoutFunc} from "./database.jsx";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LayoutFunc>
+      <Main/>
+    </LayoutFunc>
   </React.StrictMode>,
   document.getElementById("root")
 );
