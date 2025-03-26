@@ -83,24 +83,24 @@ useEffect(() => {
        <br/><br/>
        <div className="plong">
         {layout === "padrao" && (
-        <img src="Images/plong.jpg" className="face"/>
+        <img src="src/Images/plong.jpg" className="face"/>
         )}
         {layout === "download" && (
-          <img src="Images/plongblue.png" className="face"/>
+          <img src="src/Images/plongblue.png" className="face"/>
         )}
         {layout === "upload" && (
-          <img src="Images/plongred.png" className="face"/>
+          <img src="src/Images/plongred.png" className="face"/>
         )}
          
          <div className="faces" onClick={() => setLayout("padrao")}>
-         <img src="" className={
+         <img src="src/Images/face.png" className={
            layout == "padrao" ? "rosto" : "rosto anim"
          }/>
          </div>
         
         <div>
         { stars.map((estrela, key) => {
-          var d = layout.replace("padrao", "https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/star.png?v=1742777173528").replace("download", "https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/starblue.png?v=1742777182575").replace("upload", "https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/starred.png?v=1742777190773")
+          var d = "src/" + layout.replace("padrao", "Images/star.png").replace("download", "Images/starblue.png").replace("upload", "Images/starred.png")
           return (
            <img key={key} src={d}  className="star" style={estrela}/>
           )
@@ -112,14 +112,14 @@ useEffect(() => {
         {layout === "padrao" && (
        <div className="options">
         <div className="download" onClick={() => {setLayout("download"); window.history.pushState({}, "", "/buscar")}}>
-           <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/downloadBtn.png?v=1742776925994"/>
+           <img src="src/Images/downloadBtn.png"/>
            <i className="bi bi-file-earmark-arrow-down-fill"></i>
            <p>Buscar</p>
         </div>
         
         <div className="upload" onClick={() => {setLayout("upload"); inputRef.current.click(); window.history.pushState({}, "", "/enviar")}} style={Date.now() < localStorage.getItem("timeout") ? {opacity: "0.5", pointerEvents:"none"} : {}}>
           
-           <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/uploadBtn.png?v=1742777200482"/>
+           <img src="src/Images/uploadBtn.png"/>
            <i className="bi bi-file-earmark-arrow-up-fill"></i>
            <p>Guardar</p>
            
