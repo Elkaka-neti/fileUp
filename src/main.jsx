@@ -83,17 +83,17 @@ useEffect(() => {
        <br/><br/>
        <div className="plong">
         {layout === "padrao" && (
-        <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/plong.jpg?v=1742776988334" className="face"/>
+        <img src="Images/plong.jpg" className="face"/>
         )}
         {layout === "download" && (
-          <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/plongblue.png?v=1742777142727" className="face"/>
+          <img src="Images/plongblue.png" className="face"/>
         )}
         {layout === "upload" && (
-          <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/plongred.png?v=1742777160340" className="face"/>
+          <img src="Images/plongred.png" className="face"/>
         )}
          
          <div className="faces" onClick={() => setLayout("padrao")}>
-         <img src="https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/face.png?v=1742776959604" className={
+         <img src="" className={
            layout == "padrao" ? "rosto" : "rosto anim"
          }/>
          </div>
