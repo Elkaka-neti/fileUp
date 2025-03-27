@@ -83,24 +83,24 @@ useEffect(() => {
        <br/><br/>
        <div className="plong">
         {layout === "padrao" && (
-        <img src="src/Images/plong.jpg" className="face"/>
+        <img src="/Images/plong.jpg" className="face"/>
         )}
         {layout === "download" && (
-          <img src="src/Images/plongblue.png" className="face"/>
+          <img src="/Images/plongblue.png" className="face"/>
         )}
         {layout === "upload" && (
-          <img src="src/Images/plongred.png" className="face"/>
+          <img src="/Images/plongred.png" className="face"/>
         )}
          
          <div className="faces" onClick={() => setLayout("padrao")}>
-         <img src="src/Images/face.png" className={
+         <img src="/Images/face.png" className={
            layout == "padrao" ? "rosto" : "rosto anim"
          }/>
          </div>
         
         <div>
         { stars.map((estrela, key) => {
-          var d = "src/" + layout.replace("padrao", "Images/star.png").replace("download", "Images/starblue.png").replace("upload", "Images/starred.png")
+          var d = "/" + layout.replace("padrao", "Images/star.png").replace("download", "Images/starblue.png").replace("upload", "Images/starred.png")
           return (
            <img key={key} src={d}  className="star" style={estrela}/>
           )
@@ -112,14 +112,14 @@ useEffect(() => {
         {layout === "padrao" && (
        <div className="options">
         <div className="download" onClick={() => {setLayout("download"); window.history.pushState({}, "", "/buscar")}}>
-           <img src="src/Images/downloadBtn.png"/>
+           <img src="/Images/downloadBtn.png"/>
            <i className="bi bi-file-earmark-arrow-down-fill"></i>
            <p>Buscar</p>
         </div>
         
         <div className="upload" onClick={() => {setLayout("upload"); inputRef.current.click(); window.history.pushState({}, "", "/enviar")}} style={Date.now() < localStorage.getItem("timeout") ? {opacity: "0.5", pointerEvents:"none"} : {}}>
           
-           <img src="src/Images/uploadBtn.png"/>
+           <img src="/Images/uploadBtn.png"/>
            <i className="bi bi-file-earmark-arrow-up-fill"></i>
            <p>Guardar</p>
            
