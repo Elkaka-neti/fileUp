@@ -547,6 +547,20 @@ body {
   }
 }     
      
+
+@media screen and (min-width: 850px) {
+  .main h1 {
+    margin-top: 3%;
+    }
+  .main .plong {
+    height: 20%;
+    }
+  .main .plong .face {
+    height: 10%;
+    }
+  }
+  
+  
 /*
 --color: rgba(114, 114, 114, 0.3);
       background-color: #191a1a;
