@@ -592,15 +592,30 @@ body {
   
   
   .codeLayout {
-    margin-top: 10%;
-    background: green;
+    margin-top: 8%;
+   
     height: 100vh;
     }
    .codeLayout .inputs {
-     background: red;
-     height: 10% !important;
+     
+     height: 17% !important;
    }
-    
+  
+  
+  .main:has(input:focus) .plong {
+  display:flex;
+}
+ .codeLayout input {
+   font-size: 3rem;
+   }
+  
+  .codeLayout p {
+    font-size: 1.3rem;
+    }
+   .noFile {
+     margin-top: 33%;
+     height: 25vh;
+     }
   }
   
   
