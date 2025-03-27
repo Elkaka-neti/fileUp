@@ -556,22 +556,30 @@ body {
     margin-bottom: 2%;
     margin-top: 0;
     height: 30vh !important;
+   
+    
+    position: absolute;
+    bottom: 35% !important;
     }
   .main .plong .face {
-    width: 20%;
-    height: 110%;
-    margin-bottom: 3%;
+    width: 25%;
+    height: 140%;
+    overflow: hidden;
     }
   .main .plong .faces {
-    width: 20%;
-    height: 10%;
+    width: 27%;
+    height: 80%;
+    top: 30%;
+    }
+  .main .plong .star {
+    display: none;
     }
   
   }
   
   
 /*
---color: rgba(114, 114, 114, 0.3);
+--color: rgba(114, o 114, 114, 0.3);
       background-color: #191a1a;
       background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
