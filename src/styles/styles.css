@@ -553,11 +553,20 @@ body {
     margin-top: 3%;
     }
   .main .plong {
-    height: 20%;
+    margin-bottom: 2%;
+    margin-top: 0;
+    height: 30vh !important;
     }
   .main .plong .face {
+    width: 20%;
+    height: 110%;
+    margin-bottom: 3%;
+    }
+  .main .plong .faces {
+    width: 20%;
     height: 10%;
     }
+  
   }
   
   
