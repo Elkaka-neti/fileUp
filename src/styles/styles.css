@@ -575,6 +575,32 @@ body {
     display: none;
     }
   
+  .options .download img, .options .upload img {
+      width: 50%;
+      height: 95%;
+      
+      
+      /* animation: girar 5s linear infinite; */
+    }
+  
+
+    .options .download p, .options .upload p {
+      padding-top: 10% !important;
+      top: 28%;
+      font-size: 1.8em;
+      }
+  
+  
+  .codeLayout {
+    margin-top: 10%;
+    background: green;
+    height: 100vh;
+    }
+   .codeLayout .inputs {
+     background: red;
+     height: 10% !important;
+   }
+    
   }
   
   
