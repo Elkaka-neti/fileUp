@@ -620,8 +620,22 @@ body {
 
    .verifyFile .v-file {
      margin-top:20%;
-     height: 15%;
+     height: 10%;
     }
+  .verifyFile .v-file img {
+    width: 15% !important;
+    height: 60% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: center;
+    }
+  .verifyFile .v-btn {
+    margin-top: 0;
+    }
+  
+  
+  
+  
   }
   
   
