@@ -568,7 +568,7 @@ body {
     }
   .main .plong .faces {
     width: 27%;
-    height: 80%;
+    height: 85%;
     top: 30%;
     }
   .main .plong .star {
@@ -616,6 +616,12 @@ body {
      margin-top: 33%;
      height: 25vh;
      }
+  
+
+   .verifyFile .v-file {
+     margin-top:20%;
+     height: 15%;
+    }
   }
   
   
