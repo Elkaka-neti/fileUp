@@ -598,7 +598,7 @@ body {
     }
    .codeLayout .inputs {
      
-     height: 17% !important;
+     height: 10% !important;
    }
   
   
@@ -608,6 +608,11 @@ body {
  .codeLayout input {
    font-size: 3rem;
    }
+  
+  .codeLayout button {
+    height: 5%;
+         margin-top: 1%;
+       }
   
   .codeLayout p {
     font-size: 1.3rem;
@@ -632,9 +637,20 @@ body {
   .verifyFile .v-btn {
     margin-top: 0;
     }
+   .verifyFile .v-aviso {
+          width: 75%;
+          font-size: 0.6em;
+          text-align: center;
+          margin-top: -1%;
+          
+        }
   
   
+.blueTheme, .fondTheme {
+  height: 75%;
   
+  top: 30%;
+  }
   
   }
   
