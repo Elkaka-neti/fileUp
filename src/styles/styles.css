@@ -562,12 +562,13 @@ body {
     bottom: 35% !important;
     }
   .main .plong .face {
-    width: 25%;
-    height: 140%;
+    width: 34% !important;
+    height: 140% !important;
     overflow: hidden;
     }
+  
   .main .plong .faces {
-    width: 27%;
+    width: 23%;
     height: 85%;
     top: 30%;
     }
