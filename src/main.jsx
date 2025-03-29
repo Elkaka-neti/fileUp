@@ -73,7 +73,7 @@ useEffect(() => {
      <div className="col-12 head">
         <h1>E.E Jason de Morais</h1>
         <div>
-         <i className="bi bi-emoji-laughing-fill"></i>
+         <i className="bi bi-cloud-fill"></i>
         </div>
      </div>
      <div className="col-12 main">
