@@ -110,7 +110,7 @@ async function pesquisar() {
          )
          }
          {res.code === 200 && (
-         <a href={res.url} target="_blank" rel="noopener noreferrer">
+         <a href={res.url} download>
          <div className="noFile blueTheme">
          
        <i className="bi bi-cloud-arrow-down-fill"></i>
