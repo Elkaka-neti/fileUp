@@ -14,6 +14,6 @@ Jason FileUp é um sistema desenvolvido para gerenciar o envio e download de arq
 
 - ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) **:** Execução no servidor.
 - ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)**:** Para criação de APIs e gerenciamento de rotas.
-- ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)**Multer**: Para gerenciamento de uploads de arquivos.
+- ![Multer](https://img.shields.io/badge/Multer-000000?style=flat-square&logo=sqlite&logoColor=white)**Multer:** Para gerenciamento de uploads de arquivos.
 - ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)**:** Frontend para o gerenciamento dos arquivos e interação com o usuário.
 - ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)**:** Versionamento de código e colaboração no desenvolvimento.
