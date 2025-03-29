@@ -562,13 +562,13 @@ body {
     bottom: 35% !important;
     }
   .main .plong .face {
-    width: 34% !important;
-    height: 140% !important;
+    width: 28% !important;
+    height: 163% !important;
     overflow: hidden;
     }
   
   .main .plong .faces {
-    width: 23%;
+    width: 27%;
     height: 85%;
     top: 30%;
     }
@@ -645,7 +645,9 @@ body {
           margin-top: -1%;
           
         }
-  
+  .head h1 {
+    margin-top: 0;
+    }
   
 .blueTheme, .fondTheme {
   height: 75%;
