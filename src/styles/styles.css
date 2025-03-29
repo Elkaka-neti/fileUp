@@ -651,9 +651,13 @@ body {
   
 .blueTheme, .fondTheme {
   height: 75%;
-  
+  margin-top: 200%;
   top: 30%;
   }
+  
+  .p-Down {
+    top: 32vh !important;
+    }
   
   }
   
