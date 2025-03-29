@@ -93,6 +93,14 @@ async function pesquisar() {
           
          ) : (
          <div className="FindFile">
+          {Object.keys(res).length === 0 && (
+         <div className="noFile fondTheme">
+         <i className="bi bi-search"></i>
+       <p>Procurando...</p>
+      
+         </div>)}
+          
+           
          {res.code === 404 && (
          <div className="noFile fondTheme" onClick={() => setLayout("padrao")}> 
           <i className="bi bi-file-earmark-x-fill"></i>
@@ -111,6 +119,7 @@ async function pesquisar() {
     </div>
     </a>
     )}
+    {Object.keys(res).length === 0 && <p className="p-Down">Este processo pode demorar um pouco</p>}       
     {res.code === 404 && <p className="p-Down" style={{top: "-5vh"}}>Verifique o código ou, caso esteja correto,<br/>a data de expiração do arquivo.</p>}
     {res.code === 200 && <p className="p-Down">Arquivo pronto para download</p>}
     
