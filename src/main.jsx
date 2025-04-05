@@ -19,12 +19,12 @@ export default function Main() {
   const [fileInp, setFile] = useState(null);
 
   const stars = [
-    {width: "10%", height: "5%", left: "70%"}, 
-    {width: "5%", height: "2.5%", left: "65%"},
-    {width: "7%", height: "3.5%", left: "68%", top: "35%"},
-    {width: "10%", height: "5%", left: "20%", top: "45%"},
-    {width: "5%", height: "2.5%", left: "30%", top: "49%"}
-    ]
+     {width: "10%", height: "25%", left: "70%"}, 
+    {width: "5%", height: "15%", left: "65%"},
+    {width: "7%", height: "18%", left: "68%", top: "35%"},
+    {width: "10%", height: "25%", left: "20%", top: "45%"},
+    {width: "5%", height: "15%", left: "30%", top: "49%"}
+  ]
     
 
   const arqSelecionado = () => {
