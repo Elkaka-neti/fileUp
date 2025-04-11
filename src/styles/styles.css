@@ -601,10 +601,30 @@ body {
   margin-top: 1%;
 }
 
-.main:has(.codeLayout) .plong {
+.main:has(.codeLayout) .plong, .main:has(.verifyFile) .plong {
   width: 30vw;
   margin-bottom: 5vh;
 }
+
+ 
+ 
+  
+  .verifyFile .v-file {
+     margin-top: -1% !important;
+     height: 10%;
+    width: 50%;
+  
+    }
+  
+   .verifyFile .inputsCode {
+     margin-top: 3%;
+   
+     }
+
+    .verifyFile .v-aviso {
+      margin-top: 1;
+      }
+  
  
 
  .codeLayout .inputs {
