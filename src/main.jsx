@@ -45,6 +45,32 @@ useEffect(() => {
     return () => {
       window.onpopstate = null;
     };
+  
+  
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("shared") === "1") {
+
+    caches.open("shared-files").then(async (cache) => {
+
+      const response = await cache.match("/shared-file");
+
+      if (response) {
+
+        const blob = await response.blob();
+
+        const filed = new File([blob], "arquivo_compartilhado", { type: blob.type });
+
+        setLayout("upload");
+
+        setFile(filed)
+
+      }
+
+    });
+
+  }
+  
   }, []);
 
   

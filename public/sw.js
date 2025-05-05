@@ -42,7 +42,7 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(event.request.url);
 
-  if (event.request.method === "POST" && url.searchParams.get("share") === "true") {
+  if (event.request.method === "POST" && url.searchParams.get("shared") === "true") {
 
     event.respondWith(
 
@@ -56,7 +56,7 @@ self.addEventListener("fetch", (event) => {
 
         const cache = await caches.open("shared-files");
 
-        await cache.put("/shared-data", new Response(JSON.stringify({ name: file.name })));
+        await cache.put("/shared-data", new Response(file));
 
         return Response.redirect("/?shared=1", 303);
 
