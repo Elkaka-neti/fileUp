@@ -9,6 +9,7 @@ export default function Upload({file, input}) {
   const [resposta, setResposta] = useState("XXXXX");
   const isMounted = useRef(true);
   const [clip,setClip] = useState(false);
+  const [alert, setAlert] = useState(null);
   
   function formatFileSize(bytes) {
   if (bytes < 1024) return bytes + ' B';
@@ -26,6 +27,7 @@ useEffect(() => {
 
 useEffect(() => {
   if(modo) {
+    
     send();
   }
 }, [modo]);
@@ -53,6 +55,9 @@ async function send() {
  
 }
 
+  if(file.size > 50 * 1024 * 1024) {
+    setAlert("file")
+    }
 
 function files() {
   return (
@@ -77,7 +82,7 @@ function files() {
        </div>
        
        <a className="v-escolher" onClick={() => input.current.click()}>Escolher outro arquivo</a>
-       <button className="v-btn" onClick={() => enviado()}>Selecionar</button>
+       <button className="v-btn" onClick={() => enviado()} disabled={alert}>Selecionar</button>
     </div>
     
     )
