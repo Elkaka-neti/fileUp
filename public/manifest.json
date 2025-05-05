@@ -13,8 +13,39 @@
       "sizes": "512x512"
     }
   ],
+  "share_target": {
+
+    "action": "/compartilhar",
+
+    "method": "POST",
+
+    "enctype": "multipart/form-data",
+
+    "params": {
+
+      "title": "titulo",
+
+      "text": "texto",
+
+      "url": "url",
+
+      "files": [
+
+        {
+
+          "name": "arquivo",
+
+          "accept": ["image/*", "application/pdf", "application/msword", "application/vnd.ms-powerpoint"]
+
+        }
+
+      ]
+
+    }
+
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "background_color": "#000"
 }
