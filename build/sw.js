@@ -36,13 +36,12 @@ self.addEventListener('fetch', (event) => {
 
   );
 
-});
-
-self.addEventListener("fetch", (event) => {
 
   const url = new URL(event.request.url);
 
-  if (event.request.method === "POST" && url.pathname === "/shared") {
+  
+  /*
+  if (event.request.method === "POST" && url.pathname === "/") {
 
     event.respondWith(
 
@@ -65,6 +64,8 @@ self.addEventListener("fetch", (event) => {
     );
 
   }
+
+  
   
   if (event.request.method === "GET" && url.pathname === "/shared") {
 
@@ -97,5 +98,5 @@ self.addEventListener("fetch", (event) => {
     );
 
   }
-
+*/
 });
