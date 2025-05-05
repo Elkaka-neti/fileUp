@@ -38,7 +38,20 @@ self.addEventListener('fetch', (event) => {
 
 
   const url = new URL(event.request.url);
+  
+  if (event.request.mode === "navigate") {
 
+    event.respondWith(
+
+      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
+
+        return cached || fetch("/index.html");
+
+      })
+
+    );
+
+  }
   
   /*
   if (event.request.method === "POST" && url.pathname === "/") {
@@ -85,18 +98,6 @@ self.addEventListener('fetch', (event) => {
 
 
 
-  if (event.request.mode === "navigate") {
-
-    event.respondWith(
-
-      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
-
-        return cached || fetch("/index.html");
-
-      })
-
-    );
-
-  }
+  
 */
 });

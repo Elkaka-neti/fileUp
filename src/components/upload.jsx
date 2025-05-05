@@ -80,7 +80,7 @@ function files() {
             <span>{"." + file.name.match(/\.([a-zA-Z0-9]+)$/)[1]}</span>
             <p>{formatFileSize(file.size)}</p>
        </div>
-       
+        {alert && <div className="avisosC" style={{background:"red"}}>Arquivo maior que 50Mb</div>}
        <a className="v-escolher" onClick={() => input.current.click()}>Escolher outro arquivo</a>
        <button className="v-btn" onClick={() => enviado()} disabled={alert}>Selecionar</button>
     </div>
