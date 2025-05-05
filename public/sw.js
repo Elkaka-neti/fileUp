@@ -65,5 +65,37 @@ self.addEventListener("fetch", (event) => {
     );
 
   }
+  
+  if (event.request.method === "GET" && url.pathname === "/shared") {
+
+    event.respondWith(
+
+      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
+
+        return cached || fetch("/index.html");
+
+      })
+
+    );
+
+    return;
+
+  }
+
+
+
+  if (event.request.mode === "navigate") {
+
+    event.respondWith(
+
+      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
+
+        return cached || fetch("/index.html");
+
+      })
+
+    );
+
+  }
 
 });
