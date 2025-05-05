@@ -1,6 +1,6 @@
 {
-  "short_name": "JasonUp",
-  "name": "Jason Apresentações",
+  "short_name": "FileUp",
+  "name": "FileUp",
   "icons": [
     {
       "src": "https://cdn.glitch.global/94ae98c7-cc73-48de-908a-01cdc55cbc9d/20250323_220128_0000.png?v=1742778155839",
@@ -15,7 +15,7 @@
   ],
   "share_target": {
 
-    "action": "/compartilhar",
+    "action": "/shared",
 
     "method": "POST",
 
@@ -47,5 +47,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#000"
+  "background_color": "#ffffff"
 }

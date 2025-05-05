@@ -37,3 +37,65 @@ self.addEventListener('fetch', (event) => {
   );
 
 });
+
+self.addEventListener("fetch", (event) => {
+
+  const url = new URL(event.request.url);
+
+  if (event.request.method === "POST" && url.pathname === "/shared") {
+
+    event.respondWith(
+
+      (async () => {
+
+        const formData = await event.request.formData();
+
+        const file = formData.get("arquivo");
+
+        // Armazene o arquivo (ex: IndexedDB, Cache, etc.)
+
+        const cache = await caches.open("shared-files");
+
+        await cache.put("/shared-data", new Response(file));
+
+        return Response.redirect("/?shared=1", 303);
+
+      })()
+
+    );
+
+  }
+  
+  if (event.request.method === "GET" && url.pathname === "/shared") {
+
+    event.respondWith(
+
+      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
+
+        return cached || fetch("/index.html");
+
+      })
+
+    );
+
+    return;
+
+  }
+
+
+
+  if (event.request.mode === "navigate") {
+
+    event.respondWith(
+
+      caches.match("/index.html", { ignoreSearch: true }).then((cached) => {
+
+        return cached || fetch("/index.html");
+
+      })
+
+    );
+
+  }
+
+});
