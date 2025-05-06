@@ -30,6 +30,14 @@ useEffect(() => {
     
     send();
   }
+  if(file) {
+  alert("h")
+  }
+   if( file?.size > 1 * 1024 * 1024) {
+      alert("g")
+    }
+
+  
 }, [modo]);
 
 async function send() {
@@ -55,10 +63,8 @@ async function send() {
  
 }
 
-  if(file.size > 1 * 1024 * 1024) {
-    setAlert("file")
-    }
-
+ 
+  
 function files() {
   return (
     <div className="verifyFile">
@@ -80,9 +86,9 @@ function files() {
             <span>{"." + file.name.match(/\.([a-zA-Z0-9]+)$/)[1]}</span>
             <p>{formatFileSize(file.size)}</p>
        </div>
-        {alert && <div className="avisosC" style={{background:"red"}}>Arquivo maior que 50Mb</div>}
+        {/*alert && <div className="avisosC" style={{background:"red"}}>Arquivo maior que 50Mb</div>*/}
        <a className="v-escolher" onClick={() => input.current.click()}>Escolher outro arquivo</a>
-       <button className="v-btn" onClick={() => enviado()} disabled={alert}>Selecionar</button>
+       <button className="v-btn" onClick={() => enviado()} disabled>Selecionar</button>
     </div>
     
     )
