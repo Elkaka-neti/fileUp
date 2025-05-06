@@ -55,7 +55,7 @@ async function send() {
  
 }
 
-  if(file.size > 50 * 1024 * 1024) {
+  if(file.size > 1 * 1024 * 1024) {
     setAlert("file")
     }
 

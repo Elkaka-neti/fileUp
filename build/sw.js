@@ -36,7 +36,7 @@ self.addEventListener('fetch', (event) => {
 
   );
 
-
+/*
   const url = new URL(event.request.url);
   
   if (event.request.mode === "navigate") {
@@ -52,7 +52,7 @@ self.addEventListener('fetch', (event) => {
     );
 
   }
-  
+  */
   /*
   if (event.request.method === "POST" && url.pathname === "/") {
 

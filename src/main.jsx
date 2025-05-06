@@ -46,7 +46,7 @@ useEffect(() => {
       window.onpopstate = null;
     };
   
-  
+  /*
   const params = new URLSearchParams(window.location.search);
 
   if (params.get("shared") === "1") {
@@ -70,7 +70,7 @@ useEffect(() => {
     });
 
   }
-  
+  */
   }, []);
 
   

@@ -15,7 +15,7 @@
   ],
   "share_target": {
 
-    "action": "/",
+    "action": "/shared",
 
     "method": "POST",
 
