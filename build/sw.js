@@ -36,9 +36,9 @@ self.addEventListener('fetch', (event) => {
 
   );
 
-/*
-  const url = new URL(event.request.url);
-  
+
+ // const url = new URL(event.request.url);
+  /*
   if (event.request.mode === "navigate") {
 
     event.respondWith(
