@@ -95,7 +95,7 @@ function files() {
 function enviado() {
   setModo(true);
   var date = new Date();
-  date.setMinutes(date.getMinutes() + 20);
+  date.setMinutes(date.getMinutes() + 2);
   
   localStorage.setItem("timeout", date.getTime())
 }
